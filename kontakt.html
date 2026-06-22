@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktieren Sie Thermokern – Kostenlose Beratung und unverbindliches Angebot für Entrümpelung und Haushaltsauflösung in Erfurt.">
+  <title>Kontakt – Thermokern</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="{{DOMAIN}}/kontakt.html">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav>
+      <a href="/" class="logo">Thermokern</a>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="index.html#leistungen">Leistungen</a></li>
+        <li><a href="index.html#quiz">Kostenrechner</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="tel:{{TELEFON}}" class="nav-cta">Jetzt anrufen</a>
+      <button class="nav-toggle" aria-label="Menü öffnen">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-page">
+      <h1 class="section-title">Kontakt</h1>
+      <p class="section-subtitle">Schreiben Sie uns – wir melden uns innerhalb von 24 Stunden mit einem kostenlosen Angebot.</p>
+
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contact-form" action="{{FORM_ACTION}}" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Vor- und Nachname">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Für Rückruf">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse</label>
+            <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse">
+          </div>
+          <div class="form-group">
+            <label for="address">Adresse des Objekts <span class="form-optional">(optional)</span></label>
+            <input type="text" id="address" name="address" placeholder="Straße, Hausnummer, PLZ, Ort">
+          </div>
+          <div class="form-group">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Beschreiben Sie kurz Ihr Anliegen – z. B. was entrümpelt werden soll, ungefähre Größe, gewünschter Zeitraum …"></textarea>
+          </div>
+          <div class="form-group form-privacy">
+            <label>
+              <input type="checkbox" id="privacy" name="privacy" required>
+              Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Nachricht absenden</button>
+        </form>
+
+        <div class="contact-sidebar">
+          <h3>Direkter Kontakt</h3>
+          <div class="contact-option">
+            <span>&#9742;</span>
+            <div>
+              <strong>Telefon</strong><br>
+              <a href="tel:{{TELEFON}}">{{TELEFON_ANZEIGE}}</a>
+            </div>
+          </div>
+          <div class="contact-option">
+            <span>&#9993;</span>
+            <div>
+              <strong>WhatsApp</strong><br>
+              <a href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener">Nachricht senden</a>
+            </div>
+          </div>
+          <div class="contact-option">
+            <span>&#9993;</span>
+            <div>
+              <strong>E-Mail</strong><br>
+              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+            </div>
+          </div>
+          <div class="contact-option">
+            <span>&#128205;</span>
+            <div>
+              <strong>Standort</strong><br>
+              Erfurt, Thüringen
+            </div>
+          </div>
+
+          <div class="contact-hours">
+            <h4>Erreichbarkeit</h4>
+            <p>Mo – Fr: 08:00 – 18:00 Uhr</p>
+            <p>Sa: 09:00 – 14:00 Uhr</p>
+            <p>So: nach Vereinbarung</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Thermokern</h4>
+        <p>Ihr zuverlässiger Partner für Entrümpelung und Haushaltsauflösung in Erfurt und Umgebung.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Telefon: <a href="tel:{{TELEFON}}">{{TELEFON_ANZEIGE}}</a></p>
+        <p>E-Mail: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+        <p>Standort: Erfurt, Thüringen</p>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <p><a href="datenschutz.html">Datenschutzerklärung</a></p>
+        <p><a href="impressum.html">Impressum</a></p>
+        <p><a href="#" id="cb-revoke">Cookie-Einstellungen</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Thermokern. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a href="tel:{{TELEFON}}" class="sticky-btn sticky-call">&#9742; Anrufen</a>
+    <a href="https://wa.me/{{WHATSAPP}}" class="sticky-btn sticky-wa" target="_blank" rel="noopener">&#9993; WhatsApp</a>
+  </div>
+
+  <script src="js/cookie-consent.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
