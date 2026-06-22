@@ -21,19 +21,19 @@
     });
   }
 
-  // === Quiz / Kostenrechner ===
+  // === Sparrechner (Einblasdämmung) ===
   var quizData = {};
   var currentStep = 1;
   var totalSteps = 4;
 
-  var priceMatrix = {
-    type:   { wohnung: 400, keller: 200, gewerbe: 500, garage: 150 },
-    size:   { klein: 0, mittel: 200, gross: 500, "sehr-gross": 900 },
-    fill:   { wenig: 0, normal: 150, voll: 400, messie: 800 },
-    urgent: { sofort: 150, "2wochen": 50, monat: 0, flexibel: 0 }
+  var savingsMatrix = {
+    type:   { fassade: 500, dach: 400, decke: 300, keller: 200 },
+    size:   { klein: 0, mittel: 200, gross: 450, "sehr-gross": 750 },
+    age:    { neu: 0, mittel: 150, alt: 350, "sehr-alt": 550 },
+    heating:{ gas: 100, oel: 200, waermepumpe: 50, sonstiges: 150 }
   };
 
-  var stepKeys = ["type", "size", "fill", "urgent"];
+  var stepKeys = ["type", "size", "age", "heating"];
 
   function updateProgress() {
     var bar = document.getElementById("quiz-progress-bar");
@@ -53,22 +53,22 @@
     updateProgress();
   }
 
-  function calculatePrice() {
+  function calculateSavings() {
     var base = 0;
     for (var i = 0; i < stepKeys.length; i++) {
       var key = stepKeys[i];
       var val = quizData[key];
-      if (val && priceMatrix[key][val] !== undefined) {
-        base += priceMatrix[key][val];
+      if (val && savingsMatrix[key][val] !== undefined) {
+        base += savingsMatrix[key][val];
       }
     }
-    var low = Math.round(base * 0.85 / 50) * 50;
-    var high = Math.round(base * 1.35 / 50) * 50;
+    var low = Math.round(base * 0.7 / 50) * 50;
+    var high = Math.round(base * 1.3 / 50) * 50;
     if (low < 150) low = 150;
 
     var priceEl = document.getElementById("quiz-price");
     if (priceEl) {
-      priceEl.textContent = "ca. " + low + " € – " + high + " €";
+      priceEl.textContent = "ca. " + low + " € – " + high + " € pro Jahr";
     }
   }
 
@@ -91,7 +91,7 @@
           showStep(currentStep);
         } else {
           currentStep = totalSteps + 1;
-          calculatePrice();
+          calculateSavings();
           showStep("result");
           var bar = document.getElementById("quiz-progress-bar");
           if (bar) bar.style.width = "100%";
@@ -124,8 +124,8 @@
         var btn = form.querySelector('button[type="submit"]');
         btn.textContent = "Vielen Dank! Wir melden uns.";
         btn.disabled = true;
-        btn.style.background = "#27ae60";
-        btn.style.borderColor = "#27ae60";
+        btn.style.background = "#6AA832";
+        btn.style.borderColor = "#6AA832";
       }
     });
   }

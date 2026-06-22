@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kontaktieren Sie Thermokern – Kostenlose Beratung und unverbindliches Angebot für Entrümpelung und Haushaltsauflösung in Erfurt.">
-  <title>Kontakt – Thermokern</title>
+  <meta name="description" content="Kontaktieren Sie ThermoKern – Kostenlose Beratung und unverbindliches Angebot für Einblasdämmung und Energieeffizienz in Erfurt und Thüringen.">
+  <title>Kontakt – ThermoKern</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="canonical" href="{{DOMAIN}}/kontakt.html">
 </head>
@@ -12,11 +12,11 @@
 
   <header class="site-header">
     <nav>
-      <a href="/" class="logo">Thermokern</a>
+      <a href="/" class="logo"><img src="img/logo-thermokern.png" alt="ThermoKern – Einblasdämmung" class="logo-img"></a>
       <ul>
         <li><a href="/">Startseite</a></li>
         <li><a href="index.html#leistungen">Leistungen</a></li>
-        <li><a href="index.html#quiz">Kostenrechner</a></li>
+        <li><a href="index.html#quiz">Sparrechner</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
@@ -28,7 +28,7 @@
   <main>
     <section class="section contact-page">
       <h1 class="section-title">Kontakt</h1>
-      <p class="section-subtitle">Schreiben Sie uns – wir melden uns innerhalb von 24 Stunden mit einem kostenlosen Angebot.</p>
+      <p class="section-subtitle">Schreiben Sie uns – wir melden uns innerhalb von 24 Stunden mit einer kostenlosen Ersteinschätzung für Ihre Dämmung.</p>
 
       <div class="contact-wrapper">
         <form class="contact-form" id="contact-form" action="{{FORM_ACTION}}" method="POST">
@@ -47,12 +47,24 @@
             <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse">
           </div>
           <div class="form-group">
-            <label for="address">Adresse des Objekts <span class="form-optional">(optional)</span></label>
+            <label for="address">Adresse des Gebäudes <span class="form-optional">(optional)</span></label>
             <input type="text" id="address" name="address" placeholder="Straße, Hausnummer, PLZ, Ort">
           </div>
           <div class="form-group">
+            <label for="service">Gewünschte Leistung</label>
+            <select id="service" name="service">
+              <option value="">Bitte wählen</option>
+              <option value="kerndaemmung">Kerndämmung / Fassade</option>
+              <option value="dachdaemmung">Dachdämmung</option>
+              <option value="geschossdecke">Oberste Geschossdecke</option>
+              <option value="kellerdecke">Kellerdeckendämmung</option>
+              <option value="beratung">Energieberatung</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="message">Nachricht *</label>
-            <textarea id="message" name="message" rows="6" required placeholder="Beschreiben Sie kurz Ihr Anliegen – z. B. was entrümpelt werden soll, ungefähre Größe, gewünschter Zeitraum …"></textarea>
+            <textarea id="message" name="message" rows="6" required placeholder="Beschreiben Sie kurz Ihr Gebäude – z. B. Baujahr, Gebäudetyp, was gedämmt werden soll, gewünschter Zeitraum …"></textarea>
           </div>
           <div class="form-group form-privacy">
             <label>
@@ -108,8 +120,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-col">
-        <h4>Thermokern</h4>
-        <p>Ihr zuverlässiger Partner für Entrümpelung und Haushaltsauflösung in Erfurt und Umgebung.</p>
+        <h4>ThermoKern</h4>
+        <p>Ihr Fachbetrieb für Einblasdämmung und Energieeffizienz in Erfurt und Thüringen.</p>
       </div>
       <div class="footer-col">
         <h4>Kontakt</h4>
@@ -125,7 +137,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Thermokern. Alle Rechte vorbehalten.</p>
+      <p>&copy; 2026 ThermoKern. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 

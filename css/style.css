@@ -1,3 +1,12 @@
+/* === ThermoKern Brand Colors ===
+   --color-primary:      #6AA832  (Grün – Energieeffizienz)
+   --color-primary-dark:  #5A9028
+   --color-secondary:     #E87C1E  (Orange – Wärme)
+   --color-secondary-dark:#D06A12
+   --color-accent:        #2E86C1  (Blau – Kälteschutz)
+   --color-dark:          #2D3436  (Dunkelgrau – Seriosität)
+*/
+
 /* === Reset & Basis === */
 *, *::before, *::after {
   margin: 0;
@@ -48,8 +57,15 @@ nav .logo {
   font-size: 1.3rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0f172a;
+  color: #2D3436;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
 }
 
 nav ul {
@@ -68,11 +84,11 @@ nav ul a {
 }
 
 nav ul a:hover {
-  color: #2563eb;
+  color: #6AA832;
 }
 
 .nav-cta {
-  background: #2563eb;
+  background: #6AA832;
   color: #fff !important;
   padding: 0.5rem 1.2rem;
   border-radius: 6px;
@@ -84,7 +100,7 @@ nav ul a:hover {
 }
 
 .nav-cta:hover {
-  background: #1d4ed8;
+  background: #5A9028;
 }
 
 .nav-toggle {
@@ -111,14 +127,25 @@ nav ul a:hover {
 }
 
 .btn-primary {
-  background: #2563eb;
+  background: #6AA832;
   color: #fff;
-  border-color: #2563eb;
+  border-color: #6AA832;
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
+  background: #5A9028;
+  border-color: #5A9028;
+}
+
+.btn-secondary {
+  background: #E87C1E;
+  color: #fff;
+  border-color: #E87C1E;
+}
+
+.btn-secondary:hover {
+  background: #D06A12;
+  border-color: #D06A12;
 }
 
 .btn-whatsapp {
@@ -140,7 +167,7 @@ nav ul a:hover {
 
 .btn-outline:hover {
   background: #fff;
-  color: #0f172a;
+  color: #2D3436;
   border-color: #334155;
 }
 
@@ -150,8 +177,8 @@ nav ul a:hover {
 
 /* === Hero === */
 .hero {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
-  color: #0f172a;
+  background: linear-gradient(135deg, #f0f7ea 0%, #e8f5e0 40%, #fff5eb 100%);
+  color: #2D3436;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -169,7 +196,7 @@ nav ul a:hover {
 }
 
 .hero h1 span {
-  color: #2563eb;
+  color: #6AA832;
   display: block;
   font-size: 1.6rem;
   margin-top: 0.5rem;
@@ -192,7 +219,7 @@ nav ul a:hover {
 
 /* === Trust Bar === */
 .trust-bar {
-  background: #1d4ed8;
+  background: #2D3436;
   color: #fff;
 }
 
@@ -217,6 +244,7 @@ nav ul a:hover {
 
 .trust-icon {
   font-size: 1.1rem;
+  color: #6AA832;
 }
 
 /* === Sections === */
@@ -227,7 +255,7 @@ nav ul a:hover {
 }
 
 .section-alt {
-  background: #f1f5f9;
+  background: #f5f8f2;
   max-width: 100%;
 }
 
@@ -251,7 +279,7 @@ nav ul a:hover {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  color: #0f172a;
+  color: #2D3436;
 }
 
 .section-subtitle {
@@ -280,6 +308,7 @@ nav ul a:hover {
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #6AA832;
 }
 
 .service-icon {
@@ -290,7 +319,7 @@ nav ul a:hover {
 .service-card h3 {
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
-  color: #0f172a;
+  color: #2D3436;
 }
 
 .service-card p {
@@ -316,7 +345,7 @@ nav ul a:hover {
 .step-number {
   width: 56px;
   height: 56px;
-  background: #2563eb;
+  background: #6AA832;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -330,7 +359,7 @@ nav ul a:hover {
 .step h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: #0f172a;
+  color: #2D3436;
 }
 
 .step p {
@@ -362,7 +391,7 @@ nav ul a:hover {
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #0f172a;
+  color: #2D3436;
 }
 
 .quiz-options {
@@ -384,13 +413,13 @@ nav ul a:hover {
 }
 
 .quiz-option:hover {
-  border-color: #2563eb;
-  background: #eff6ff;
+  border-color: #6AA832;
+  background: #f0f7ea;
 }
 
 .quiz-option.selected {
-  border-color: #2563eb;
-  background: #2563eb;
+  border-color: #6AA832;
+  background: #6AA832;
   color: #fff;
 }
 
@@ -401,7 +430,7 @@ nav ul a:hover {
 .quiz-price {
   font-size: 2.2rem;
   font-weight: 800;
-  color: #2563eb;
+  color: #6AA832;
   margin: 1rem 0 1.5rem;
 }
 
@@ -436,7 +465,7 @@ nav ul a:hover {
 
 .quiz-progress-bar {
   height: 100%;
-  background: #2563eb;
+  background: #6AA832;
   border-radius: 3px;
   width: 0%;
   transition: width 0.4s ease;
@@ -457,7 +486,7 @@ nav ul a:hover {
 }
 
 .review-stars {
-  color: #eab308;
+  color: #E87C1E;
   font-size: 1.2rem;
   margin-bottom: 0.75rem;
 }
@@ -485,13 +514,13 @@ nav ul a:hover {
 }
 
 .area-tag {
-  background: #eff6ff;
-  border: 1px solid #dbeafe;
+  background: #f0f7ea;
+  border: 1px solid #d4e8c2;
   padding: 0.5rem 1.1rem;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #1e40af;
+  color: #4A7A20;
 }
 
 /* === Kontaktformular === */
@@ -539,7 +568,7 @@ nav ul a:hover {
 .contact-form select:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #2563eb;
+  border-color: #6AA832;
 }
 
 .form-privacy {
@@ -562,7 +591,7 @@ nav ul a:hover {
 }
 
 .form-privacy a {
-  color: #2563eb;
+  color: #6AA832;
 }
 
 .form-optional {
@@ -582,7 +611,7 @@ nav ul a:hover {
 .contact-sidebar h3 {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  color: #0f172a;
+  color: #2D3436;
 }
 
 .contact-option {
@@ -599,7 +628,7 @@ nav ul a:hover {
 }
 
 .contact-option a {
-  color: #2563eb;
+  color: #6AA832;
   text-decoration: none;
 }
 
@@ -610,13 +639,13 @@ nav ul a:hover {
 .contact-hours {
   margin-top: 2rem;
   padding: 1.25rem;
-  background: #f1f5f9;
+  background: #f0f7ea;
   border-radius: 10px;
 }
 
 .contact-hours h4 {
   font-size: 1rem;
-  color: #0f172a;
+  color: #2D3436;
   margin-bottom: 0.5rem;
 }
 
@@ -671,7 +700,7 @@ nav ul a:hover {
 
 .blog-sort select:focus {
   outline: none;
-  border-color: #2563eb;
+  border-color: #6AA832;
 }
 
 .blog-list {
@@ -707,8 +736,8 @@ nav ul a:hover {
 
 .blog-tag {
   display: inline-block;
-  background: #eff6ff;
-  color: #1e40af;
+  background: #f0f7ea;
+  color: #4A7A20;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.2rem 0.6rem;
@@ -725,13 +754,13 @@ nav ul a:hover {
 }
 
 .blog-card h2 a {
-  color: #0f172a;
+  color: #2D3436;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .blog-card h2 a:hover {
-  color: #2563eb;
+  color: #6AA832;
 }
 
 .blog-card p {
@@ -744,13 +773,13 @@ nav ul a:hover {
 .blog-read-more {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #2563eb;
+  color: #6AA832;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .blog-read-more:hover {
-  color: #1d4ed8;
+  color: #5A9028;
   text-decoration: underline;
 }
 
@@ -774,7 +803,7 @@ nav ul a:hover {
 .blog-article h1 {
   font-size: 2.2rem;
   font-weight: 800;
-  color: #0f172a;
+  color: #2D3436;
   line-height: 1.25;
   margin: 0.75rem 0 1.5rem;
 }
@@ -789,7 +818,7 @@ nav ul a:hover {
 .blog-article h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #2D3436;
   margin: 2.5rem 0 0.75rem;
 }
 
@@ -830,7 +859,7 @@ nav ul a:hover {
 }
 
 .breadcrumb a:hover {
-  color: #2563eb;
+  color: #6AA832;
   text-decoration: underline;
 }
 
@@ -853,8 +882,8 @@ nav ul a:hover {
 }
 
 .blog-table th {
-  background: #f1f5f9;
-  color: #0f172a;
+  background: #f0f7ea;
+  color: #2D3436;
   font-weight: 600;
 }
 
@@ -865,14 +894,14 @@ nav ul a:hover {
 .blog-cta {
   margin: 2.5rem 0 1rem;
   padding: 2rem;
-  background: #eff6ff;
-  border: 1px solid #dbeafe;
+  background: #f0f7ea;
+  border: 1px solid #d4e8c2;
   border-radius: 12px;
   text-align: center;
 }
 
 .blog-cta p {
-  color: #1e40af;
+  color: #4A7A20;
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -911,7 +940,7 @@ nav ul a:hover {
   font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
-  color: #0f172a;
+  color: #2D3436;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -927,7 +956,7 @@ nav ul a:hover {
 }
 
 .faq-item[open] summary::after {
-  content: "−";
+  content: "\2212";
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -943,9 +972,8 @@ nav ul a:hover {
 
 /* === Footer === */
 footer {
-  background: #f8fafc;
-  color: #64748b;
-  border-top: 1px solid #e2e8f0;
+  background: #2D3436;
+  color: #b0b8bf;
   font-size: 0.9rem;
 }
 
@@ -959,7 +987,7 @@ footer {
 }
 
 .footer-col h4 {
-  color: #0f172a;
+  color: #fff;
   font-size: 1rem;
   margin-bottom: 0.75rem;
 }
@@ -969,17 +997,17 @@ footer {
 }
 
 footer a {
-  color: #64748b;
+  color: #b0b8bf;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 footer a:hover {
-  color: #2563eb;
+  color: #6AA832;
 }
 
 .footer-bottom {
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid #3d4446;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem 2rem;
@@ -1011,7 +1039,7 @@ footer a:hover {
 }
 
 .sticky-call {
-  background: #2563eb;
+  background: #6AA832;
   color: #fff;
 }
 
@@ -1028,7 +1056,7 @@ footer a:hover {
   right: 0;
   z-index: 9999;
   background: #fff;
-  border-top: 2px solid #2563eb;
+  border-top: 2px solid #6AA832;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -1070,7 +1098,7 @@ footer a:hover {
 
 .cb-btn {
   padding: 0.7rem 1.5rem;
-  border: 2px solid #2563eb;
+  border: 2px solid #6AA832;
   border-radius: 4px;
   font-size: 0.95rem;
   font-weight: 600;
@@ -1079,12 +1107,12 @@ footer a:hover {
 }
 
 .cb-btn-accept {
-  background: #2563eb;
+  background: #6AA832;
   color: #fff;
 }
 
 .cb-btn-accept:hover {
-  background: #1d4ed8;
+  background: #5A9028;
 }
 
 .cb-btn-reject {
@@ -1106,16 +1134,16 @@ footer a:hover {
 }
 
 .cb-btn-settings:hover {
-  color: #2563eb;
+  color: #6AA832;
 }
 
 .cb-btn-save {
-  background: #2563eb;
+  background: #6AA832;
   color: #fff;
 }
 
 .cb-btn-save:hover {
-  background: #1d4ed8;
+  background: #5A9028;
 }
 
 #cb-settings {
@@ -1146,7 +1174,7 @@ footer a:hover {
 .cb-category-header input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  accent-color: #2563eb;
+  accent-color: #6AA832;
 }
 
 .cb-required {
