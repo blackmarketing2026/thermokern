@@ -970,6 +970,52 @@ nav ul a:hover {
   line-height: 1.6;
 }
 
+/* === Über uns === */
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-logo {
+  flex-shrink: 0;
+}
+
+.about-logo-img {
+  width: 220px;
+  height: auto;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+.about-ctas {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-logo-img {
+    width: 180px;
+  }
+
+  .about-ctas {
+    justify-content: center;
+  }
+}
+
 /* === Footer === */
 footer {
   background: #2D3436;
