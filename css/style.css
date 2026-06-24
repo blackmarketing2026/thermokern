@@ -368,108 +368,6 @@ nav ul a:hover {
   line-height: 1.5;
 }
 
-/* === Quiz / Kostenrechner === */
-.quiz-container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 2.5rem 2rem;
-  position: relative;
-}
-
-.quiz-step {
-  display: none;
-}
-
-.quiz-step.active {
-  display: block;
-}
-
-.quiz-step h3 {
-  text-align: center;
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-  color: #2D3436;
-}
-
-.quiz-options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-}
-
-.quiz-option {
-  background: #fff;
-  border: 2px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 1.1rem 1rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  transition: border-color 0.2s, background 0.2s;
-}
-
-.quiz-option:hover {
-  border-color: #6AA832;
-  background: #f0f7ea;
-}
-
-.quiz-option.selected {
-  border-color: #6AA832;
-  background: #6AA832;
-  color: #fff;
-}
-
-.quiz-result {
-  text-align: center;
-}
-
-.quiz-price {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #6AA832;
-  margin: 1rem 0 1.5rem;
-}
-
-.quiz-result p {
-  color: #64748b;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-
-.quiz-result-ctas {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-.quiz-restart {
-  color: #64748b;
-  border-color: #cbd5e1;
-  font-size: 0.85rem;
-  padding: 0.5rem 1.2rem;
-}
-
-.quiz-progress {
-  margin-top: 2rem;
-  height: 6px;
-  background: #e2e8f0;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.quiz-progress-bar {
-  height: 100%;
-  background: #6AA832;
-  border-radius: 3px;
-  width: 0%;
-  transition: width 0.4s ease;
-}
 
 /* === Reviews === */
 .reviews-grid {
@@ -1326,9 +1224,6 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 
-  .quiz-options {
-    grid-template-columns: 1fr;
-  }
 
   .form-row {
     grid-template-columns: 1fr;

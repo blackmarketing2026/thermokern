@@ -18,7 +18,7 @@
       <ul>
         <li><a href="#leistungen">Leistungen</a></li>
         <li><a href="#ablauf">Ablauf</a></li>
-        <li><a href="#quiz">Sparrechner</a></li>
+        <li><a href="#anfrage">Anfrage</a></li>
         <li><a href="#bewertungen">Bewertungen</a></li>
         <li><a href="#ueber-uns">Über uns</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -37,7 +37,7 @@
       <div class="hero-ctas">
         <a href="tel:+491627673545" class="btn btn-primary">&#9742; Jetzt anrufen</a>
         <a href="https://wa.me/491627673545" class="btn btn-whatsapp" target="_blank" rel="noopener">&#9993; WhatsApp</a>
-        <a href="#kontakt" class="btn btn-outline">Kostenlose Beratung</a>
+        <a href="#anfrage" class="btn btn-outline">Kostenlose Beratung</a>
       </div>
     </div>
   </section>
@@ -131,75 +131,38 @@
       </div>
     </section>
 
-    <!-- ============ QUIZ / SPARRECHNER ============ -->
-    <section class="section" id="quiz">
-      <h2 class="section-title">Sparrechner</h2>
-      <p class="section-subtitle">Beantworten Sie 4 kurze Fragen und erfahren Sie, wie viel Sie mit einer Einblasdämmung sparen können.</p>
+    <!-- ============ ANFRAGE-FORMULAR ============ -->
+    <section class="section" id="anfrage">
+      <h2 class="section-title">Kostenlose Beratung anfordern</h2>
+      <p class="section-subtitle">Schreiben Sie uns – wir melden uns innerhalb von 24 Stunden.</p>
 
-      <div class="quiz-container">
-        <!-- Schritt 1 -->
-        <div class="quiz-step active" data-step="1">
-          <h3>Was soll gedämmt werden?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="fassade">&#127968; Fassade / Kerndämmung</button>
-            <button class="quiz-option" data-value="dach">&#9650; Dach / Dachschräge</button>
-            <button class="quiz-option" data-value="decke">&#9660; Oberste Geschossdecke</button>
-            <button class="quiz-option" data-value="keller">&#9660; Kellerdecke</button>
+      <form class="contact-form" id="contact-form-inline">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inline-name">Name *</label>
+            <input type="text" id="inline-name" name="name" required placeholder="Vor- und Nachname">
+          </div>
+          <div class="form-group">
+            <label for="inline-phone">Telefonnummer *</label>
+            <input type="tel" id="inline-phone" name="phone" required placeholder="Für Rückruf">
           </div>
         </div>
-
-        <!-- Schritt 2 -->
-        <div class="quiz-step" data-step="2">
-          <h3>Wie groß ist die Dämmfläche ungefähr?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="klein">Bis 50 m²</button>
-            <button class="quiz-option" data-value="mittel">50 – 100 m²</button>
-            <button class="quiz-option" data-value="gross">100 – 200 m²</button>
-            <button class="quiz-option" data-value="sehr-gross">Über 200 m²</button>
-          </div>
+        <div class="form-group">
+          <label for="inline-email">E-Mail-Adresse</label>
+          <input type="email" id="inline-email" name="email" placeholder="Ihre E-Mail-Adresse">
         </div>
-
-        <!-- Schritt 3 -->
-        <div class="quiz-step" data-step="3">
-          <h3>Wie alt ist Ihr Gebäude?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="neu">Nach 2000 gebaut</button>
-            <button class="quiz-option" data-value="mittel">1970 – 2000</button>
-            <button class="quiz-option" data-value="alt">1950 – 1970</button>
-            <button class="quiz-option" data-value="sehr-alt">Vor 1950 / Altbau</button>
-          </div>
+        <div class="form-group">
+          <label for="inline-message">Nachricht</label>
+          <textarea id="inline-message" name="message" rows="4" placeholder="Beschreiben Sie kurz Ihr Anliegen …"></textarea>
         </div>
-
-        <!-- Schritt 4 -->
-        <div class="quiz-step" data-step="4">
-          <h3>Wie heizen Sie aktuell?</h3>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="gas">Gas</button>
-            <button class="quiz-option" data-value="oel">Öl</button>
-            <button class="quiz-option" data-value="waermepumpe">Wärmepumpe</button>
-            <button class="quiz-option" data-value="sonstiges">Sonstiges</button>
-          </div>
+        <div class="form-group form-privacy">
+          <label>
+            <input type="checkbox" name="privacy" required>
+            Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+          </label>
         </div>
-
-        <!-- Ergebnis -->
-        <div class="quiz-step" data-step="result">
-          <div class="quiz-result">
-            <h3>Ihre geschätzte jährliche Ersparnis</h3>
-            <div class="quiz-price" id="quiz-price">ca. 400 € – 900 € pro Jahr</div>
-            <p>Dies ist eine unverbindliche Schätzung. Für eine genaue Berechnung vereinbaren wir gerne eine kostenlose Vor-Ort-Beratung.</p>
-            <div class="quiz-result-ctas">
-              <a href="tel:+491627673545" class="btn btn-primary">&#9742; Jetzt anrufen</a>
-              <a href="https://wa.me/491627673545" class="btn btn-whatsapp" target="_blank" rel="noopener">&#9993; WhatsApp schreiben</a>
-            </div>
-            <button class="btn btn-outline quiz-restart">Nochmal berechnen</button>
-          </div>
-        </div>
-
-        <!-- Fortschrittsanzeige -->
-        <div class="quiz-progress">
-          <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
-        </div>
-      </div>
+        <button type="submit" class="btn btn-primary btn-full">Anfrage absenden</button>
+      </form>
     </section>
 
     <!-- ============ BEWERTUNGEN ============ -->
@@ -265,87 +228,6 @@
       </div>
     </section>
 
-    <!-- ============ KONTAKTFORMULAR ============ -->
-    <section class="section section-alt" id="kontakt">
-      <h2 class="section-title">Kostenlose Beratung anfordern</h2>
-      <p class="section-subtitle">Beschreiben Sie kurz Ihr Gebäude – wir melden uns innerhalb von 24 Stunden mit einer ersten Einschätzung.</p>
-
-      <div class="contact-wrapper">
-        <form class="contact-form" id="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
-            </div>
-            <div class="form-group">
-              <label for="phone">Telefon *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="Für Rückruf">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">E-Mail</label>
-              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse">
-            </div>
-            <div class="form-group">
-              <label for="service">Leistung</label>
-              <select id="service" name="service">
-                <option value="">Bitte wählen</option>
-                <option value="kerndaemmung">Kerndämmung / Fassade</option>
-                <option value="dachdaemmung">Dachdämmung</option>
-                <option value="geschossdecke">Oberste Geschossdecke</option>
-                <option value="kellerdecke">Kellerdeckendämmung</option>
-                <option value="beratung">Energieberatung</option>
-                <option value="sonstiges">Sonstiges</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Nachricht</label>
-            <textarea id="message" name="message" rows="4" placeholder="Beschreiben Sie kurz Ihr Gebäude (Baujahr, Gebäudetyp, was gedämmt werden soll …)"></textarea>
-          </div>
-          <div class="form-group form-privacy">
-            <label>
-              <input type="checkbox" id="privacy" name="privacy" required>
-              Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Anfrage absenden</button>
-        </form>
-
-        <div class="contact-sidebar">
-          <h3>Lieber direkt?</h3>
-          <div class="contact-option">
-            <span>&#9742;</span>
-            <div>
-              <strong>Telefon</strong><br>
-              <a href="tel:+491627673545">+49 162 7673545</a>
-            </div>
-          </div>
-          <div class="contact-option">
-            <span>&#9993;</span>
-            <div>
-              <strong>WhatsApp</strong><br>
-              <a href="https://wa.me/491627673545" target="_blank" rel="noopener">Nachricht senden</a>
-            </div>
-          </div>
-          <div class="contact-option">
-            <span>&#9993;</span>
-            <div>
-              <strong>E-Mail</strong><br>
-              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
-            </div>
-          </div>
-          <div class="contact-option">
-            <span>&#128205;</span>
-            <div>
-              <strong>Standort</strong><br>
-              Erfurt, Thüringen
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ============ FAQ ============ -->
     <section class="section" id="faq">

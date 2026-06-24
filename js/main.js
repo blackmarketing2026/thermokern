@@ -21,102 +21,8 @@
     });
   }
 
-  // === Sparrechner (Einblasdämmung) ===
-  var quizData = {};
-  var currentStep = 1;
-  var totalSteps = 4;
-
-  var savingsMatrix = {
-    type:   { fassade: 500, dach: 400, decke: 300, keller: 200 },
-    size:   { klein: 0, mittel: 200, gross: 450, "sehr-gross": 750 },
-    age:    { neu: 0, mittel: 150, alt: 350, "sehr-alt": 550 },
-    heating:{ gas: 100, oel: 200, waermepumpe: 50, sonstiges: 150 }
-  };
-
-  var stepKeys = ["type", "size", "age", "heating"];
-
-  function updateProgress() {
-    var bar = document.getElementById("quiz-progress-bar");
-    if (bar) {
-      bar.style.width = ((currentStep - 1) / totalSteps * 100) + "%";
-    }
-  }
-
-  function showStep(step) {
-    document.querySelectorAll(".quiz-step").forEach(function (el) {
-      el.classList.remove("active");
-    });
-    var target = step === "result"
-      ? document.querySelector('[data-step="result"]')
-      : document.querySelector('[data-step="' + step + '"]');
-    if (target) target.classList.add("active");
-    updateProgress();
-  }
-
-  function calculateSavings() {
-    var base = 0;
-    for (var i = 0; i < stepKeys.length; i++) {
-      var key = stepKeys[i];
-      var val = quizData[key];
-      if (val && savingsMatrix[key][val] !== undefined) {
-        base += savingsMatrix[key][val];
-      }
-    }
-    var low = Math.round(base * 0.7 / 50) * 50;
-    var high = Math.round(base * 1.3 / 50) * 50;
-    if (low < 150) low = 150;
-
-    var priceEl = document.getElementById("quiz-price");
-    if (priceEl) {
-      priceEl.textContent = "ca. " + low + " € – " + high + " € pro Jahr";
-    }
-  }
-
-  document.querySelectorAll(".quiz-option").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var step = this.closest(".quiz-step");
-      var stepNum = parseInt(step.getAttribute("data-step"));
-      var value = this.getAttribute("data-value");
-
-      step.querySelectorAll(".quiz-option").forEach(function (b) {
-        b.classList.remove("selected");
-      });
-      this.classList.add("selected");
-
-      quizData[stepKeys[stepNum - 1]] = value;
-
-      setTimeout(function () {
-        if (stepNum < totalSteps) {
-          currentStep = stepNum + 1;
-          showStep(currentStep);
-        } else {
-          currentStep = totalSteps + 1;
-          calculateSavings();
-          showStep("result");
-          var bar = document.getElementById("quiz-progress-bar");
-          if (bar) bar.style.width = "100%";
-        }
-      }, 250);
-    });
-  });
-
-  var restartBtn = document.querySelector(".quiz-restart");
-  if (restartBtn) {
-    restartBtn.addEventListener("click", function () {
-      quizData = {};
-      currentStep = 1;
-      document.querySelectorAll(".quiz-option").forEach(function (b) {
-        b.classList.remove("selected");
-      });
-      showStep(1);
-    });
-  }
-
-  updateProgress();
-
-  // === Kontaktformular ===
-  var form = document.getElementById("contact-form");
-  if (form) {
+  // === Kontaktformulare ===
+  function initContactForm(form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
@@ -129,9 +35,13 @@
         name: (form.querySelector('[name="name"]').value || "").trim(),
         phone: (form.querySelector('[name="phone"]').value || "").trim(),
         email: (form.querySelector('[name="email"]').value || "").trim(),
-        service: (form.querySelector('[name="service"]').value || "").trim(),
         message: (form.querySelector('[name="message"]').value || "").trim(),
       };
+
+      var serviceField = form.querySelector('[name="service"]');
+      if (serviceField) {
+        payload.service = (serviceField.value || "").trim();
+      }
 
       var addressField = form.querySelector('[name="address"]');
       if (addressField) {
@@ -163,6 +73,10 @@
         });
     });
   }
+
+  document.querySelectorAll(".contact-form").forEach(function (form) {
+    initContactForm(form);
+  });
 
   // === Blog-Sortierung ===
   var blogList = document.getElementById("blog-list");
