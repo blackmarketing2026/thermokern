@@ -342,6 +342,114 @@ nav ul a:hover {
   line-height: 1.5;
 }
 
+/* === Altbau Nachrüsten Section === */
+.altbau-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.altbau-badge {
+  display: inline-block;
+  background: #E87C1E;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.altbau-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2D3436;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.altbau-text > p {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.altbau-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.altbau-stat {
+  text-align: center;
+  flex: 1;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem 0.75rem;
+}
+
+.altbau-stat-number {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #6AA832;
+  line-height: 1.2;
+}
+
+.altbau-stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.altbau-highlights {
+  margin-bottom: 2rem;
+}
+
+.altbau-highlights p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  padding-left: 0.25rem;
+}
+
+.altbau-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 900px) {
+  .altbau-section {
+    grid-template-columns: 1fr;
+  }
+
+  .altbau-image {
+    order: -1;
+  }
+
+  .altbau-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .altbau-stats {
+    gap: 0.75rem;
+  }
+
+  .altbau-stat-number {
+    font-size: 1.3rem;
+  }
+}
+
 /* === Climate Protection Section === */
 .climate-section {
   display: grid;
