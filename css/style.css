@@ -342,6 +342,103 @@ nav ul a:hover {
   line-height: 1.5;
 }
 
+/* === Climate Protection Section === */
+.climate-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.climate-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.climate-text h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2D3436;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.climate-text > p {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.climate-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.climate-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.climate-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.climate-icon-heat {
+  background: #fff5eb;
+  color: #E87C1E;
+}
+
+.climate-icon-cold {
+  background: #ebf5ff;
+  color: #2E86C1;
+}
+
+.climate-icon-save {
+  background: #f0f7ea;
+  color: #6AA832;
+}
+
+.climate-benefit strong {
+  display: block;
+  font-size: 1rem;
+  color: #2D3436;
+  margin-bottom: 0.25rem;
+}
+
+.climate-benefit p {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .climate-section {
+    grid-template-columns: 1fr;
+  }
+
+  .climate-image {
+    order: -1;
+  }
+
+  .climate-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* === Image Banner === */
 .image-banner {
   max-width: 1200px;
