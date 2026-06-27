@@ -2,7 +2,7 @@ const { Resend } = require("resend");
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const RECIPIENT = process.env.CONTACT_EMAIL || "info@thermokern.de";
+const RECIPIENT = process.env.CONTACT_EMAIL || "info@thermo-kern.de";
 
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
@@ -34,7 +34,7 @@ module.exports = async function handler(req, res) {
   if (message) rows.push(["Nachricht", message]);
 
   const htmlBody = `
-    <h2>Neue Kontaktanfrage über thermokern.de</h2>
+    <h2>Neue Kontaktanfrage über thermo-kern.de</h2>
     <table style="border-collapse:collapse;width:100%;max-width:600px;font-family:sans-serif;">
       ${rows
         .map(
@@ -52,7 +52,7 @@ module.exports = async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: "ThermoKern Website <noreply@thermokern.de>",
+      from: "ThermoKern Website <lead@leadcenter.function-concept.de>",
       to: [RECIPIENT],
       subject: `Neue Anfrage von ${name}`,
       html: htmlBody,
