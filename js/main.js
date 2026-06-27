@@ -55,10 +55,8 @@
       })
         .then(function (res) {
           if (!res.ok) throw new Error("Server error");
-          btn.textContent = "Vielen Dank! Wir melden uns.";
-          btn.style.background = "#6AA832";
-          btn.style.borderColor = "#6AA832";
-          form.reset();
+          var userName = encodeURIComponent(payload.name);
+          window.location.href = "/danke.html?name=" + userName;
         })
         .catch(function () {
           btn.textContent = "Fehler – bitte rufen Sie uns an.";

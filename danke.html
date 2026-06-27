@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Vielen Dank – ThermoKern</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav>
+      <a href="/" class="logo"><img src="img/logo-thermokern.png" alt="ThermoKern – Einblasdämmung" class="logo-img"></a>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="index.html#leistungen">Leistungen</a></li>
+        <li><a href="index.html#anfrage">Anfrage</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="kontakt.html" class="nav-cta">Kostenloses Angebot</a>
+      <button class="nav-toggle" aria-label="Menü öffnen">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section thankyou-page">
+      <div class="thankyou-icon">&#10003;</div>
+      <h1 class="thankyou-title">Vielen Dank für Ihre Eintragung, <span id="thankyou-name"></span>!</h1>
+      <p class="thankyou-subtitle">Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+
+      <div class="thankyou-box">
+        <p>Sie möchten nicht warten? Kontaktieren Sie uns jetzt direkt:</p>
+        <div class="thankyou-ctas">
+          <a href="tel:+491627673545" class="btn btn-primary btn-lg">&#9742; Jetzt anrufen</a>
+          <a href="https://wa.me/491627673545" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">&#128172; WhatsApp schreiben</a>
+        </div>
+      </div>
+
+      <a href="/" class="thankyou-back">&#8592; Zurück zur Startseite</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>ThermoKern</h4>
+        <p>Ihr Fachbetrieb für Einblasdämmung und Energieeffizienz in Ostfriesland.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Telefon: <a href="tel:+491627673545">+49 162 7673545</a></p>
+        <p>E-Mail: <a href="mailto:info@thermo-kern.de">info@thermo-kern.de</a></p>
+        <p>Standort: Südbrookmerland, Ostfriesland</p>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <p><a href="datenschutz.html">Datenschutzerklärung</a></p>
+        <p><a href="impressum.html">Impressum</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ThermoKern. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var name = params.get("name") || "Interessent";
+      document.getElementById("thankyou-name").textContent = name;
+    })();
+  </script>
+  <script src="js/cookie-consent.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

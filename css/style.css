@@ -852,6 +852,94 @@ nav ul a:hover {
   }
 }
 
+/* === Thank You Page === */
+.thankyou-page {
+  text-align: center;
+  max-width: 640px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.thankyou-icon {
+  width: 80px;
+  height: 80px;
+  background: #6AA832;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.thankyou-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2D3436;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.thankyou-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.thankyou-box {
+  background: #f0f7ea;
+  border: 1px solid #d4e8c2;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thankyou-box p {
+  font-size: 1.05rem;
+  color: #2D3436;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.thankyou-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.thankyou-back {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.thankyou-back:hover {
+  color: #6AA832;
+}
+
+@media (max-width: 600px) {
+  .thankyou-title {
+    font-size: 1.5rem;
+  }
+
+  .thankyou-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 /* === Legal Pages === */
 .legal-page {
   max-width: 860px;
