@@ -56,7 +56,7 @@
         .then(function (res) {
           if (!res.ok) throw new Error("Server error");
           var userName = encodeURIComponent(payload.name);
-          window.location.href = "/danke.html?name=" + userName;
+          window.location.href = "/danke?name=" + userName;
         })
         .catch(function () {
           btn.textContent = "Fehler – bitte rufen Sie uns an.";

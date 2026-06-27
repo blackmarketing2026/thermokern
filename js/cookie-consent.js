@@ -133,7 +133,7 @@
           'andere helfen uns, die Website zu verbessern und Ihnen personalisierte Inhalte anzuzeigen. ' +
           'Sie können selbst entscheiden, welche Kategorien Sie zulassen möchten. ' +
           'Ihre Einwilligung ist freiwillig und kann jederzeit über den Link „Cookie-Einstellungen" im Footer widerrufen werden. ' +
-          'Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>' +
+          'Weitere Informationen finden Sie in unserer <a href="/datenschutz">Datenschutzerklärung</a>.</p>' +
         '</div>' +
         '<div class="cb-actions">' +
           '<button type="button" class="cb-btn cb-btn-accept" id="cb-accept-all">Alle akzeptieren</button>' +
