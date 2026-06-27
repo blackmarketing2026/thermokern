@@ -108,6 +108,37 @@
     sortBlog("newest");
   }
 
+  // === Header Scroll Effect ===
+  var header = document.querySelector(".site-header");
+  if (header) {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 20) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    }, { passive: true });
+  }
+
+  // === Scroll Animations ===
+  if ("IntersectionObserver" in window) {
+    var animEls = document.querySelectorAll(".fade-up, .fade-left, .fade-right, .scale-in, .stagger");
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+    );
+    animEls.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
   // === Smooth Scroll für Sticky CTA ===
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {
