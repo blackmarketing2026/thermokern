@@ -40,9 +40,14 @@ module.exports = async function handler(req, res) {
 
         <!-- Header -->
         <tr>
-          <td style="background:#2D3436;padding:24px 32px;text-align:center;">
+          <td style="background:#ffffff;padding:24px 32px;text-align:center;">
             <img src="${LOGO_URL}" alt="ThermoKern" width="180" style="max-width:180px;height:auto;" />
           </td>
+        </tr>
+
+        <!-- Accent Line -->
+        <tr>
+          <td style="background:#6AA832;height:4px;font-size:0;line-height:0;">&nbsp;</td>
         </tr>
 
         <!-- Title -->
