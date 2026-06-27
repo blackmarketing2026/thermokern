@@ -2,7 +2,7 @@ const { Resend } = require("resend");
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const RECIPIENT = process.env.CONTACT_EMAIL || "info@thermo-kern.de";
+const RECIPIENT = process.env.CONTACT_EMAIL || "thermokern@function-concept.de";
 
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
