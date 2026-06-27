@@ -154,7 +154,7 @@ module.exports = async function handler(req, res) {
     await resend.emails.send({
       from: "ThermoKern Website <lead@leadcenter.function-concept.de>",
       to: RECIPIENTS,
-      subject: `Neue Anfrage von ${name}`,
+      subject: `Lead - ThermoKern - ${name}`,
       html: htmlBody,
       text: textBody,
       replyTo: email || undefined,
