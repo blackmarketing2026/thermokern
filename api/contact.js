@@ -2,7 +2,7 @@ const { Resend } = require("resend");
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const RECIPIENT = process.env.CONTACT_EMAIL || "thermokern@function-concept.de";
+const RECIPIENT = "thermokern@function-concept.de";
 const LOGO_URL = process.env.LOGO_URL || "https://thermo-kern.de/img/logo-thermokern.png";
 
 module.exports = async function handler(req, res) {
