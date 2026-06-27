@@ -180,12 +180,26 @@ nav ul a:hover {
   background: linear-gradient(135deg, #f0f7ea 0%, #e8f5e0 40%, #fff5eb 100%);
   color: #2D3436;
   padding: 5rem 2rem;
-  text-align: center;
+}
+
+.hero-split {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
 }
 
 .hero-content {
   max-width: 800px;
-  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .hero h1 {
@@ -326,6 +340,21 @@ nav ul a:hover {
   font-size: 0.92rem;
   color: #64748b;
   line-height: 1.5;
+}
+
+/* === Image Banner === */
+.image-banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.image-banner img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
 /* === Steps === */
@@ -1141,6 +1170,15 @@ footer a:hover {
 
 /* === Responsive === */
 @media (max-width: 900px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
   .services-grid,
   .reviews-grid,
   .footer-inner {
@@ -1163,6 +1201,10 @@ footer a:hover {
 
   .hero h1 span {
     font-size: 1.3rem;
+  }
+
+  .image-banner img {
+    height: 240px;
   }
 }
 
