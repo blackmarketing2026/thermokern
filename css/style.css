@@ -1468,13 +1468,18 @@ footer a:hover {
   text-align: center;
 }
 
-.sticky-call {
+.sticky-form {
   background: #6AA832;
   color: #fff;
 }
 
 .sticky-wa {
   background: #25d366;
+  color: #fff;
+}
+
+.sticky-call {
+  background: #2E86C1;
   color: #fff;
 }
 
