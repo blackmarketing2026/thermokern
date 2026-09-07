@@ -1,6 +1,9 @@
 {
   "name": "thermokern",
   "private": true,
+  "scripts": {
+    "build:orte": "node scripts/build-orte.mjs"
+  },
   "dependencies": {
     "resend": "^4.0.0"
   }

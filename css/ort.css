@@ -1,0 +1,85 @@
+/* Shared design for location service pages. Uses the existing ThermoKern brand. */
+.location-page { --location-green: #4a7a20; --location-dark: #2d3436; --location-tint: #f3f7ee; --location-border: #dce7d4; overflow-wrap: anywhere; }
+.location-container { width: min(1200px, calc(100% - 2rem)); margin-inline: auto; }
+.location-section { padding-block: 3rem; }
+.location-page section[id], .location-page main[id] { scroll-margin-top: 100px; }
+.location-page h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -.035em; color: var(--location-dark); margin: .75rem 0 1rem; }
+.location-page h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1.2; color: var(--location-dark); margin-bottom: 1rem; letter-spacing: -.02em; }
+.location-page h3 { color: var(--location-dark); font-size: 1.15rem; line-height: 1.35; margin-bottom: .75rem; }
+.location-page p { line-height: 1.75; margin-bottom: 1rem; }
+.location-page a:not(.btn, .sticky-btn, .nav-cta, .logo) { text-underline-offset: 4px; }
+.location-page .btn { min-height: 48px; white-space: normal; }
+.location-page .btn-primary, .location-page .nav-cta { background: var(--location-green); border-color: var(--location-green); color: #fff; }
+.location-page .btn-primary:hover, .location-page .nav-cta:hover { background: #3a6119; border-color: #3a6119; }
+.location-page .btn-whatsapp { color: #fff; background: #176a36; border-color: #176a36; }
+.location-page .btn-outline { color: var(--location-green); border-color: var(--location-green); }
+.location-page .location-small, .location-page .location-source { font-size: .85rem; color: #52616b; }
+.location-page .location-source a { color: #52616b; }
+.location-eyebrow { font-size: .8rem; font-weight: 750; letter-spacing: .075em; text-transform: uppercase; color: var(--location-green); }
+.location-page .location-eyebrow { margin-bottom: .5rem; }
+.location-hero { background: linear-gradient(130deg, #f0f7ea, #fbfcf9 70%, #fff5eb); padding-block: 1.25rem 2rem; }
+.location-breadcrumb { color: #52616b; font-size: .85rem; padding-bottom: 1.75rem; }
+.location-breadcrumb a { color: #52616b; }
+.location-split { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; align-items: center; }
+.location-page .location-lead { font-size: 1.35rem; line-height: 1.4; color: var(--location-green); font-weight: 600; }
+.location-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0 1rem; }
+.location-actions .btn { width: 100%; }
+.location-photo img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-radius: 18px; display: block; }
+.location-photo figcaption, .location-diagram figcaption { font-size: .8rem; color: #52616b; margin-top: .7rem; }
+.location-benefits { display: grid; grid-template-columns: minmax(0,1fr); gap: .75rem; padding-block: 1.5rem; border-bottom: 1px solid var(--location-border); font-size: .95rem; font-weight: 600; }
+.location-benefits span { color: var(--location-green); margin-right: .45rem; }
+.location-intro { max-width: 700px; color: #52616b; }
+.location-cards { display: grid; grid-template-columns: minmax(0,1fr); gap: 1.25rem; margin-top: 2rem; }
+.location-card { padding: 1.5rem; border: 1px solid var(--location-border); border-top: 4px solid #6aa832; border-radius: 14px; background: #fff; }
+.location-number { display: inline-flex; min-width: 44px; min-height: 44px; justify-content: center; align-items: center; border-radius: 12px; background: var(--location-tint); color: var(--location-green); font-weight: 800; margin-bottom: 1rem; }
+.location-card a, .location-text-link { color: var(--location-green); font-weight: 600; }
+.location-card a, .location-nearby a { display: inline-flex; align-items: center; min-height: 44px; }
+.location-tint { background: var(--location-tint); }
+.location-diagram img { display: block; width: 100%; }
+.location-local { display: grid; grid-template-columns: minmax(0,1fr); gap: 1.5rem; }
+.location-local-note { padding: 1.5rem; border: 1px solid var(--location-border); border-left: 4px solid #e87c1e; border-radius: 14px; }
+.location-local-note .btn { width: 100%; }
+.location-process { display: grid; grid-template-columns: minmax(0,1fr); list-style: none; gap: 1.5rem; margin-top: 2rem; }
+.location-process .location-number { background: var(--location-green); color: #fff; }
+.location-banner { display: grid; gap: 1.5rem; padding: 1.5rem; border-radius: 18px; background: var(--location-dark); border-top: 4px solid #e87c1e; color: #fff; align-items: center; }
+.location-banner h2 { color: #fff; }
+.location-banner .location-eyebrow, .location-banner .location-text-link { color: #cde7b5; }
+.location-contact { display: grid; grid-template-columns: minmax(0,1fr); gap: 2rem; margin-top: 2rem; align-items: start; }
+.location-contact form { padding: 1.5rem; background: var(--location-tint); border: 1px solid var(--location-border); border-radius: 18px; }
+.location-contact .form-row { margin-bottom: 0; }
+.location-contact .form-privacy a { color: var(--location-green); }
+.location-contact-options { padding: 1.5rem; border: 1px solid var(--location-border); border-radius: 18px; }
+.location-contact-options .btn { display: block; width: 100%; margin: 1rem 0; }
+.location-contact-options > .location-text-link { display: block; padding-block: .5rem; min-height: 44px; }
+.location-faq { max-width: 860px; }
+.location-page .faq-item summary { gap: 1rem; }
+.location-page .faq-item summary::after { flex-shrink: 0; color: var(--location-green); }
+.location-nearby { display: grid; grid-template-columns: minmax(0,1fr); gap: .75rem; margin: 1.5rem 0; }
+.location-nearby a { padding: 1rem; background: var(--location-tint); border: 1px solid var(--location-border); border-radius: 10px; color: var(--location-green); font-weight: 650; text-decoration: none; }
+.location-page .sticky-cta { padding-bottom: env(safe-area-inset-bottom); }
+.location-page .sticky-form { background: var(--location-green); }
+.location-page .sticky-wa { background: #176a36; }
+.location-page .sticky-call { background: #236a99; }
+.location-page a:focus-visible, .location-page button:focus-visible, .location-page summary:focus-visible { outline: 3px solid #2e86c1; outline-offset: 4px; }
+.skip-link { position: fixed; top: -120px; left: 1rem; z-index: 10000; background: #fff; color: #2d3436; padding: 1rem; }
+.skip-link:focus { top: 1rem; }
+@media (min-width: 700px) {
+  .location-container { width: min(1200px, calc(100% - 4rem)); }
+  .location-section { padding-block: 4rem; }
+  .location-actions .btn { width: auto; }
+  .location-benefits, .location-cards, .location-process, .location-nearby { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .location-local { grid-template-columns: 1.2fr 1fr; gap: 2.5rem; }
+  .location-contact { grid-template-columns: 1.4fr 1fr; }
+}
+@media (min-width: 1000px) {
+  .location-split { grid-template-columns: 1.1fr 1fr; gap: 3rem; }
+  .location-hero { padding-bottom: 3.5rem; }
+  .location-banner { grid-template-columns: 1.7fr 1fr; padding: 2.5rem; gap: 2rem; }
+}
+@media (max-width: 600px) {
+  .location-page .sticky-btn { padding-inline: .35rem; font-size: .9rem; }
+  .location-page footer { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .location-page * { scroll-behavior: auto; transition: none; }
+}

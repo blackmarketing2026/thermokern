@@ -763,6 +763,11 @@ nav ul a:hover {
   color: #4A7A20;
 }
 
+a.area-tag { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+a.area-tag:hover { text-decoration: underline; background: #e5f0da; }
+a.area-tag:focus-visible { outline: 3px solid #2e86c1; outline-offset: 3px; }
+.area-note { max-width: 760px; margin: 1.5rem auto 0; text-align: center; color: #52616b; }
+
 /* === Kontaktformular === */
 .contact-wrapper {
   display: grid;

@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Aurich", "slug": "aurich", "region": "Ostfriesland", "nearby": ["suedbrookmerland", "emden", "wilhelmshaven"],
+    "description": "Einblasdämmung in Aurich für Fassade, Dach und Geschossdecke. ThermoKern prüft Ihr Haus und berät Sie persönlich. Jetzt kostenlos anfragen.",
+    "localTitle": "Aurich: vom Stadtkern bis in die Ortsteile",
+    "localText": "Zu Aurich gehören neben dem Stadtkern unter anderem Sandhorst, Wallinghausen und Tannenhausen. Für die Vorbereitung einer Dämmung sind die Unterlagen zum jeweiligen Gebäude hilfreich: Das Geoportal der Stadt bietet eine Adresssuche und den Download von Bebauungsplänen. Ein solcher Plan beschreibt allerdings nicht automatisch den tatsächlichen Wandaufbau Ihres Hauses.",
+    "localTip": "Nennen Sie uns Ihren Ortsteil und bekannte Umbauten. Bei einem Anbau betrachten wir Alt- und Neubau getrennt, denn beide können unterschiedliche Hohlräume besitzen. Bauzeichnungen oder Fotos können Sie für das erste Gespräch bereithalten.",
+    "source": "https://www.aurich.de/bauen-wohnen/geoportal-der-stadt-aurich.html", "sourceLabel": "Stadt Aurich: Geoportal",
+    "localQuestion": "Kommt ThermoKern auch in die Auricher Ortsteile?", "localAnswer": "Sie können Ihr Vorhaben auch für die Ortsteile anfragen. Geben Sie die genaue Adresse an. Wir stimmen den Besichtigungstermin von unserem Standort Südbrookmerland aus mit Ihnen ab."
+  },
+  {
+    "name": "Südbrookmerland", "slug": "suedbrookmerland", "region": "Ostfriesland", "nearby": ["aurich", "emden", "oldenburg"],
+    "description": "Einblasdämmung in Südbrookmerland vom ansässigen Fachbetrieb ThermoKern. Hohlräume prüfen, Dämmung planen und kostenloses Angebot anfragen.",
+    "localTitle": "Südbrookmerland: unser Standort in Ostfriesland",
+    "localText": "Südbrookmerland liegt zwischen Aurich, Norden und Emden. Zur Gemeinde gehören zehn Ortsteile, darunter Moordorf, Victorbur, Münkeboe und Wiegboldsbur. Auch das Gebiet am Großen Meer mit Bedekaspel und Forlitz-Blaukirchen gehört dazu. Hier in Südbrookmerland befindet sich der Standort von ThermoKern.",
+    "localTip": "Ob dauerhaft bewohntes Haus oder zeitweise genutztes Gebäude: Beschreiben Sie uns, welche Räume beheizt werden. Gerade bei einem ungenutzten Dachboden hilft das, die passende Dämmebene zu bestimmen. Adresse und Ortsteil erleichtern die Abstimmung der Besichtigung.",
+    "source": "https://www.suedbrookmerland.de/gemeinde/ueber-die-gemeinde", "sourceLabel": "Gemeinde Südbrookmerland: Gemeindeporträt",
+    "localQuestion": "Wo sitzt ThermoKern?", "localAnswer": "ThermoKern hat seinen Standort in Südbrookmerland. Ihr Ansprechpartner ist Lars Dirksen. Sie erreichen uns über das Formular auf dieser Seite, telefonisch oder per WhatsApp."
+  },
+  {
+    "name": "Emden", "slug": "emden", "region": "Ostfriesland", "nearby": ["suedbrookmerland", "aurich", "oldenburg"],
+    "description": "Einblasdämmung in Emden: Kerndämmung, Dach und Geschossdecke mit ThermoKern planen. Persönliche Beratung und Angebot für Ihr Gebäude anfragen.",
+    "localTitle": "Emden: Dämmung für Ihr Haus in der Seehafenstadt",
+    "localText": "Emden ist eine Seehafenstadt mit unterschiedlichen Wohnquartieren. Auf den städtischen Seiten finden sich beispielsweise Informationen zur Entwicklung von Barenburg und zur energetischen Stadtsanierung in Borssum. Für Ihr eigenes Haus zählt der konkrete Zustand von Außenwand, Dach und Decke.",
+    "localTip": "Geben Sie bei einer Anfrage an, ob mehrere Wohnungen oder Eigentümer betroffen sind. Wir besprechen, welche Fassadenbereiche zugänglich sind und wer den Termin begleitet. Feuchte Stellen oder beschädigte Fugen sollten Sie bereits im ersten Gespräch erwähnen, damit sie bei der Prüfung berücksichtigt werden.",
+    "source": "https://www.emden.de/emden", "sourceLabel": "Stadt Emden: Stadt und Quartiere",
+    "localQuestion": "Ist Einblasdämmung in Emden auch bei Mehrfamilienhäusern möglich?", "localAnswer": "Das kann bei geeigneten Bauteilen möglich sein. Neben dem Aufbau müssen Zugang, Umfang und die Abstimmung mit den Eigentümern geklärt werden. Nennen Sie uns die Anzahl der Wohnungen und das gewünschte Bauteil."
+  },
+  {
+    "name": "Oldenburg", "slug": "oldenburg", "region": "Oldenburger Land", "nearby": ["edewecht", "delmenhorst", "vechta"],
+    "description": "Einblasdämmung in Oldenburg: Hohlraumdämmung und Kerndämmung für Ihr Haus prüfen lassen. ThermoKern berät zu Fassade, Dach und Decke.",
+    "localTitle": "Oldenburg: Ihr Gebäude und sein Stadtteil",
+    "localText": "Eversten, Kreyenbrück und Ofenerdiek sind bekannte Wohnbereiche Oldenburgs. Die Stadt beschreibt diese Quartiere mit ihren unterschiedlichen Angeboten und Zentren. Für eine Dämmung lässt sich aus dem Namen eines Stadtteils jedoch kein einheitlicher Wandaufbau ableiten. Dafür betrachten wir Ihr Gebäude mit seinen Bauphasen und bisherigen Sanierungen.",
+    "localTip": "Für Häuser mit seitlichen Anbauten, Garage oder Wintergarten helfen Fotos aller betroffenen Fassaden. Teilen Sie uns mit, welche Flächen von außen erreichbar sind. So lässt sich die Besichtigung gezielter vorbereiten und eine Hohlraumdämmung von anderen notwendigen Arbeiten abgrenzen.",
+    "source": "https://www.oldenburg.de/fileadmin/oldenburg/Benutzer/Dateien/11_Amt_fuer_Wirtschaftsfoerderung/111_Standortmarketing/Publikationen_Dateien/Standortbroschuere_36-seitig_A-Z_verlinkt_sf22_Web_bf2.pdf", "sourceLabel": "Stadt Oldenburg: Standortbroschüre (PDF)",
+    "localQuestion": "Sind Hohlraumdämmung und Kerndämmung in Oldenburg dasselbe?", "localAnswer": "Hohlraumdämmung ist der weitere Begriff. Kerndämmung bezeichnet hier die Dämmung zwischen den Schalen einer Außenwand. Ob diese Ausführung bei Ihrem Haus möglich ist, klären wir anhand des Wandaufbaus."
+  },
+  {
+    "name": "Wilhelmshaven", "slug": "wilhelmshaven", "region": "Jadebusen", "nearby": ["aurich", "oldenburg", "bremerhaven"],
+    "description": "Einblasdämmung in Wilhelmshaven mit ThermoKern anfragen. Eignung von Fassade, Dach und Geschossdecke prüfen und Dämmung persönlich planen.",
+    "localTitle": "Wilhelmshaven: Wohnen am Jadebusen",
+    "localText": "Wilhelmshaven liegt an der Nordwestseite des Jadebusens und grenzt im Norden und Westen an den Landkreis Friesland. Das Stadtgebiet reicht von den südlichen Bereichen bis in die nördlichen Wohnlagen. Für die Terminplanung benötigen wir deshalb die genaue Gebäudeadresse und eine kurze Beschreibung Ihres Vorhabens.",
+    "localTip": "Bei der Fassadenprüfung betrachten wir auch Anschlüsse und den Zustand der Außenhülle. Wenn Sie nach Regen feuchte Stellen bemerken, nennen Sie uns die betroffene Hausseite. Eine Dämmung wird erst geplant, wenn die Voraussetzungen am Bauteil geklärt sind.",
+    "source": "https://www.wilhelmshaven.de/PDF/Infomaterial/61/20251114_NVP_Wilhelmshaven_final.pdf", "sourceLabel": "Stadt Wilhelmshaven: Raumstruktur im Nahverkehrsplan (PDF)",
+    "localQuestion": "Was sollte ich für die Beratung in Wilhelmshaven vorbereiten?", "localAnswer": "Hilfreich sind die Adresse, das ungefähre Baujahr und Fotos der betroffenen Bauteile. Erwähnen Sie bestehende Dämmungen, auffällige Feuchtigkeit und geplante Fenster- oder Dacharbeiten."
+  },
+  {
+    "name": "Edewecht", "slug": "edewecht", "region": "Ammerland", "nearby": ["oldenburg", "vechta", "delmenhorst"],
+    "description": "Einblasdämmung in Edewecht und seinen Ortsteilen anfragen. ThermoKern prüft geeignete Hohlräume und plant Ihre Dämmung mit Ihnen.",
+    "localTitle": "Edewecht: Dämmung in der Gemeinde im Ammerland",
+    "localText": "Edewecht ist eine Gemeinde im Ammerland. Zu ihr gehört unter anderem Friedrichsfehn mit seinem eigenen Nahversorgungszentrum entlang der Friedrichsfehner Straße. Bei Ihrer Anfrage können Sie den Ortsteil direkt ergänzen, damit das Gebäude eindeutig zugeordnet werden kann.",
+    "localTip": "Bei einem Haus mit Nebengebäuden ist für die Dämmung vor allem wichtig, wo die beheizten Wohnräume enden. Nennen Sie uns, ob Dachboden, Garage oder ein früherer Wirtschaftsbereich heute zum Wohnraum gehören. Wir betrachten den Aufbau der betroffenen Bereiche einzeln.",
+    "source": "https://edewecht.de/wp-content/uploads/2026/01/Edewecht_EHK_251113_Endfassung.pdf", "sourceLabel": "Gemeinde Edewecht: Einzelhandelskonzept und Ortsteile (PDF)",
+    "localQuestion": "Kann ich eine Dämmung in Friedrichsfehn anfragen?", "localAnswer": "Ja. Geben Sie Friedrichsfehn und die genaue Gebäudeadresse an. Wir klären mit Ihnen das gewünschte Bauteil und die Möglichkeiten für einen Besichtigungstermin."
+  },
+  {
+    "name": "Bremerhaven", "slug": "bremerhaven", "region": "Unterweser", "nearby": ["wilhelmshaven", "bremen", "stade"],
+    "description": "Einblasdämmung in Bremerhaven: Ihr Vorhaben für Fassade, Dach oder Geschossdecke mit ThermoKern besprechen. Beratung und Termin anfragen.",
+    "localTitle": "Bremerhaven: Ihr Dämmvorhaben in der Hafenstadt",
+    "localText": "Häfen, Schiffe und maritime Einrichtungen prägen Bremerhaven. Das städtische Portal stellt unter anderem den Fischereihafen und die Havenwelten vor. Bei der Dämmung eines Wohnhauses steht dagegen Ihr konkreter Gebäudeteil im Mittelpunkt: Eine Außenwand benötigt eine andere Prüfung als eine Dachschräge oder eine Geschossdecke.",
+    "localTip": "Bei einem bewohnten Mehrfamilienhaus sollte für die Besichtigung der Zugang zu den betroffenen Flächen organisiert sein. Nennen Sie uns die Gebäudehöhe und die Nutzung des Dachgeschosses. Anfahrt, Termin und Umfang stimmen wir für Ihr Vorhaben in Bremerhaven individuell ab.",
+    "source": "https://www.bremerhaven.de/en/", "sourceLabel": "Stadt Bremerhaven: Hafenstadt und maritime Einrichtungen",
+    "localQuestion": "Wie vereinbare ich einen Termin für Bremerhaven?", "localAnswer": "Senden Sie uns Adresse, Bauteil und eine kurze Beschreibung. Wir klären den Leistungsumfang und stimmen die Anfahrt von Südbrookmerland sowie einen möglichen Termin persönlich mit Ihnen ab."
+  },
+  {
+    "name": "Bremen", "slug": "bremen", "region": "Raum Bremen", "nearby": ["delmenhorst", "sottrum", "verden"],
+    "description": "Einblasdämmung in Bremen für geeignete Wände, Dächer und Decken. Mit ThermoKern den Gebäudeaufbau klären und einen Beratungstermin anfragen.",
+    "localTitle": "Bremen: unterschiedliche Stadtteile, individuelle Häuser",
+    "localText": "Bremen erstreckt sich mit seinen Stadtteilen auf beide Seiten der Weser. Zum Stadtbild gehören unter anderem Walle, Gröpelingen und die südlichen Wohnbereiche. Für ein Dämmvorhaben ist neben dem Stadtteil die tatsächliche Erreichbarkeit Ihrer Fassade und der oberen Geschosse wichtig.",
+    "localTip": "Bei einem Reihenhaus hilft ein Hinweis darauf, ob die Rückseite durch das Haus oder über einen Seitenweg erreichbar ist. Teilen Sie uns außerdem mit, ob Grenzwände und Anbauten betroffen sind. Damit können wir den Vor-Ort-Termin und die zu prüfenden Flächen gezielt abstimmen.",
+    "source": "https://www.bremen.de/leben-in-bremen/wohnen/stadtteile", "sourceLabel": "Bremen.de: Stadtteile im Überblick",
+    "localQuestion": "Lässt sich auch ein Bremer Reihenhaus prüfen?", "localAnswer": "Ja. Entscheidend sind der Aufbau der zu dämmenden Bauteile und ihre Zugänglichkeit. Ein Reihenhaus ist nicht allein aufgrund seiner Bauform für eine Kerndämmung geeignet oder ungeeignet."
+  },
+  {
+    "name": "Delmenhorst", "slug": "delmenhorst", "region": "Oldenburger Land", "nearby": ["bremen", "oldenburg", "vechta"],
+    "description": "Einblasdämmung in Delmenhorst anfragen: ThermoKern berät zu Kerndämmung, Dach und Geschossdecke. Haus prüfen und passendes Angebot planen.",
+    "localTitle": "Delmenhorst: Sanierung im gewachsenen Wohnumfeld",
+    "localText": "Die südliche Stadtmitte gehört zum ältesten Teil Delmenhorsts. Dort liegen auch die Graft und die Burginsel. Die Stadt beschreibt für diesen Bereich unterschiedliche Wohnangebote. Bei einem älteren Haus kann deshalb die bisherige Sanierungsgeschichte ebenso wichtig sein wie das ursprüngliche Baujahr.",
+    "localTip": "Sammeln Sie Angaben zu bereits erneuerten Fenstern, Dacharbeiten und früheren Dämmmaßnahmen. Bei einem Umbau können einzelne Wandabschnitte anders aufgebaut sein. Wir beziehen diese Informationen in die Prüfung ein und stimmen den Termin für Ihr Gebäude in Delmenhorst mit Ihnen ab.",
+    "source": "https://www.delmenhorst.de/leben/bauen/stadtteile/mitte_sued.php", "sourceLabel": "Stadt Delmenhorst: Südliche Stadtmitte",
+    "localQuestion": "Kann nach früheren Sanierungen noch gedämmt werden?", "localAnswer": "Das hängt davon ab, was bereits verändert wurde und welche Hohlräume verbleiben. Rechnungen, Bauzeichnungen und Fotos früherer Arbeiten helfen, die Ausgangslage vor der Besichtigung einzugrenzen."
+  },
+  {
+    "name": "Vechta", "slug": "vechta", "region": "Oldenburger Münsterland", "nearby": ["oldenburg", "edewecht", "delmenhorst"],
+    "description": "Einblasdämmung in Vechta und Langförden anfragen. ThermoKern prüft die Voraussetzungen und bespricht Dämmung, Aufwand und Termin mit Ihnen.",
+    "localTitle": "Vechta und Langförden: den Gebäudeaufbau klären",
+    "localText": "Zu Vechta gehört auch Langförden, für das die Stadt eine eigene Verwaltungsstelle führt. Für Ihre Dämmung können Sie sowohl die Kernstadt als auch den jeweiligen Ortsteil in der Anfrage nennen. Die genaue Adresse hilft uns, die Besichtigung Ihres Gebäudes vorzubereiten.",
+    "localTip": "Bei einem Gebäude mit größerer Dachfläche lohnt sich ein genauer Blick auf deren Nutzung: Liegen darunter beheizte Räume oder bleibt der Dachboden kalt? Teilen Sie uns mit, ob der Boden begehbar bleiben soll und welche Dämmung bereits vorhanden ist. Daraus ergibt sich die weitere Prüfung.",
+    "source": "https://www.vechta.de/buergerservice/verwaltung", "sourceLabel": "Stadt Vechta: Verwaltung und Langförden",
+    "localQuestion": "Prüfen Sie auch eine Geschossdecke in Vechta?", "localAnswer": "Sie können eine Geschossdeckendämmung bei uns anfragen. Ob eine Einblaslösung oder eine andere Ausführung passt, hängt vom Deckenaufbau, der Nutzung und den vorhandenen Materialien ab."
+  },
+  {
+    "name": "Nordhorn", "slug": "nordhorn", "region": "Grafschaft Bentheim", "nearby": ["vechta", "edewecht", "oldenburg"],
+    "description": "Einblasdämmung in Nordhorn: Fassade, Dach und Decke für Ihr Haus prüfen lassen. ThermoKern bespricht Eignung, Leistungsumfang und Termin.",
+    "localTitle": "Nordhorn: Ihr Haus in der Wasserstadt",
+    "localText": "Nordhorn ist als Wasserstadt bekannt. Die Innenstadt auf einer Insel, Kanäle und der Vechtesee prägen das Stadtbild. Diese geografische Lage allein sagt jedoch nichts über den Feuchtezustand einer bestimmten Hauswand aus. Dafür muss das einzelne Gebäude untersucht werden.",
+    "localTip": "Falls Sie im Haus feuchte Stellen beobachten, notieren Sie deren Lage und wann sie auftreten. Für die erste Einschätzung sind außerdem Baujahr und vorhandene Dämmung hilfreich. Den möglichen Termin in Nordhorn und die Anfahrt stimmen wir anhand Ihres Vorhabens individuell ab.",
+    "source": "https://www.nordhorn.de/portal/seiten/geschichte-der-wasserstadt-nordhorn-900000041-26710.html", "sourceLabel": "Stadt Nordhorn: Geschichte der Wasserstadt",
+    "localQuestion": "Ist eine feuchte Wand ein Fall für Einblasdämmung?", "localAnswer": "Zuerst muss die Feuchteursache geklärt werden. Eine Dämmung ersetzt keine Abdichtung oder Reparatur. Nach der Bewertung des Bauteils lässt sich entscheiden, ob eine Einblasdämmung sinnvoll ist."
+  },
+  {
+    "name": "Rotenburg (Wümme)", "slug": "rotenburg", "region": "Wümme-Region", "nearby": ["sottrum", "sittensen", "verden"],
+    "description": "Einblasdämmung in Rotenburg (Wümme), auch für Häuser in den Ortschaften. Mit ThermoKern Bauteile prüfen und Beratungstermin anfragen.",
+    "localTitle": "Rotenburg: Kernstadt und dörfliche Ortschaften",
+    "localText": "Rotenburg (Wümme) besteht aus der Kernstadt und den Ortschaften Borchel, Mulmshorn, Unterstedt und Waffensen. Wenn Sie außerhalb der Kernstadt wohnen, ergänzen Sie die Ortschaft bei Ihrer Anfrage. So können wir das Gebäude und den Zugang zu den betroffenen Bauteilen besser einordnen.",
+    "localTip": "Bei Häusern mit mehreren Bauabschnitten helfen getrennte Angaben zu Wohnhaus und Anbau. Nicht jede Fassade besitzt denselben Hohlraum. Wir besprechen vor einer Besichtigung, welche Flächen gedämmt werden sollen und welche Unterlagen zum Aufbau vorhanden sind.",
+    "source": "https://www.rotenburg-wuemme.de/Unsere-Stadt/Ortschaften.htm", "sourceLabel": "Stadt Rotenburg (Wümme): Ortschaften",
+    "localQuestion": "Ist mit Rotenburg hier Rotenburg an der Wümme gemeint?", "localAnswer": "Ja. Diese Seite betrifft Rotenburg (Wümme) in Niedersachsen mit seiner Kernstadt und den zugehörigen Ortschaften. Bitte geben Sie bei der Anfrage Ihre vollständige Gebäudeadresse an."
+  },
+  {
+    "name": "Sottrum", "slug": "sottrum", "region": "Wümme-Region", "nearby": ["rotenburg", "bremen", "sittensen"],
+    "description": "Einblasdämmung in Sottrum für Fassade, Dach oder Geschossdecke anfragen. ThermoKern berät persönlich und klärt die Voraussetzungen am Haus.",
+    "localTitle": "Sottrum: auch kleinere Orte bei der Dämmung berücksichtigen",
+    "localText": "Sottrum ist eine Gemeinde im Landkreis Rotenburg (Wümme) und gehört zur gleichnamigen Samtgemeinde. Für die Planung ist diese Unterscheidung hilfreich: Nennen Sie bitte die tatsächliche Gemeinde und die vollständige Adresse Ihres Hauses, wenn Sie aus dem Gebiet der Samtgemeinde anfragen.",
+    "localTip": "Bei einem Haus mit Hofzufahrt oder zurückliegendem Gebäudeteil hilft ein Foto vom Zugang. Wir klären mit Ihnen, welche Wandseiten oder Dachbereiche erreicht werden müssen. Erst nach Prüfung des Aufbaus lässt sich sagen, ob die vorhandenen Hohlräume für eine Einblasdämmung geeignet sind.",
+    "source": "https://www.statistikportal.de/de/gemeindeverzeichnis/03357045", "sourceLabel": "Statistische Ämter: Gemeinde Sottrum",
+    "localQuestion": "Kann ich auch aus einem Dorf bei Sottrum anfragen?", "localAnswer": "Ja. Nennen Sie bitte den genauen Ort und die Postleitzahl. Wir prüfen Ihre Anfrage und besprechen den möglichen Leistungsumfang sowie die Terminplanung persönlich."
+  },
+  {
+    "name": "Sittensen", "slug": "sittensen", "region": "Zwischen Bremen und Hamburg", "nearby": ["sottrum", "rotenburg", "buchholz-in-der-nordheide"],
+    "description": "Einblasdämmung in Sittensen anfragen. ThermoKern bespricht die Dämmung Ihres Hauses, prüft geeignete Hohlräume und stimmt den Termin mit Ihnen ab.",
+    "localTitle": "Sittensen und die Orte der Samtgemeinde",
+    "localText": "Die Samtgemeinde Sittensen liegt zwischen Bremen und Hamburg an der A1. Neben Sittensen gehören unter anderem Tiste, Hamersen sowie Groß und Klein Meckelsen zu ihr. Für eine Dämmungsanfrage aus diesem Gebiet benötigen wir den tatsächlichen Gebäudestandort, nicht nur den Namen der Samtgemeinde.",
+    "localTip": "Senden Sie uns im ersten Schritt das gewünschte Bauteil, das ungefähre Baujahr und Hinweise auf frühere Dämmarbeiten. Damit können wir den nächsten Prüfschritt und eine mögliche Besichtigung abstimmen. Eine feste Ausführungsdauer lässt sich erst nach Klärung des Umfangs nennen.",
+    "source": "https://sittensen.de/", "sourceLabel": "Samtgemeinde Sittensen: Lage und Mitgliedsgemeinden",
+    "localQuestion": "Sind auch Anfragen aus Tiste oder Hamersen möglich?", "localAnswer": "Sie können Ihr Vorhaben auch aus diesen Mitgliedsgemeinden anfragen. Geben Sie die vollständige Adresse an. Wir stimmen Leistungsumfang, Anfahrt und einen möglichen Termin individuell ab."
+  },
+  {
+    "name": "Stade", "slug": "stade", "region": "Elbe-Weser-Raum", "nearby": ["bremerhaven", "sittensen", "buchholz-in-der-nordheide"],
+    "description": "Einblasdämmung in Stade: ThermoKern berät zur Dämmung geeigneter Fassaden, Dächer und Decken. Haus und Vorhaben beschreiben, Termin anfragen.",
+    "localTitle": "Stade: Bausubstanz in der Hansestadt erhalten",
+    "localText": "Die Hansestadt Stade liegt an der Schwinge. Ihre Häfen und die historische Stadtgeschichte prägen das Stadtbild. Wenn das Erscheinungsbild Ihrer Fassade erhalten bleiben soll, ist eine Prüfung des vorhandenen Wandaufbaus ein sinnvoller erster Schritt. Eine Kerndämmung kommt nur bei einer geeigneten Hohlschicht infrage.",
+    "localTip": "Weisen Sie bei Ihrer Anfrage auf eine besonders erhaltenswerte Fassade oder bekannte Vorgaben für das Gebäude hin. Wir besprechen, welche Untersuchungen möglich sind und welche weiteren Abstimmungen nötig werden. Für die Ausführung zählt der tatsächliche Aufbau, nicht allein das Alter des Hauses.",
+    "source": "https://stade-tourismus.de/de/hansestadt-stade/stades-stadtgeschichte-2/", "sourceLabel": "STADE Marketing und Tourismus: Stadtgeschichte",
+    "localQuestion": "Bleibt die Fassadenoptik bei einer Kerndämmung erhalten?", "localAnswer": "Bei geeigneter Hohlschicht wird das Material zwischen den Mauerschalen eingebracht. Es sind Einblasöffnungen erforderlich, die anschließend verschlossen werden. Wie sichtbar diese Stellen bleiben, hängt vom vorhandenen Material und Fugenbild ab."
+  },
+  {
+    "name": "Verden", "slug": "verden", "region": "Aller-Region", "nearby": ["bremen", "rotenburg", "walsrode"],
+    "description": "Einblasdämmung in Verden an der Aller anfragen. ThermoKern prüft die Voraussetzungen und bespricht Fassade, Dach oder Geschossdecke mit Ihnen.",
+    "localTitle": "Verden an der Aller: die passende Dämmebene finden",
+    "localText": "Verden an der Aller ist unter anderem für seinen Dom und das Deutsche Pferdemuseum bekannt. Bei einer Anfrage für Ihr Wohnhaus benötigen wir neben der Adresse vor allem Informationen zur Nutzung der Räume. Ein unbeheizter Dachboden wird anders betrachtet als ein bereits ausgebautes Dachgeschoss.",
+    "localTip": "Wenn ein späterer Dachausbau geplant ist, sollte das bereits im ersten Gespräch angesprochen werden. So lässt sich vermeiden, dass eine Maßnahme ohne Blick auf die künftige Nutzung geplant wird. Wir klären den Aufbau und stimmen einen möglichen Termin für Ihr Haus in Verden ab.",
+    "source": "https://www.landkreis-verden.de/portal/seiten/stadt-verden-aller--901000307-20600.html", "sourceLabel": "Landkreis Verden: Stadt Verden (Aller)",
+    "localQuestion": "Sollte ich einen geplanten Dachausbau vorab erwähnen?", "localAnswer": "Ja. Ob künftig beheizte Räume unter dem Dach entstehen, beeinflusst die Wahl der Dämmebene. Wir beziehen Ihre Planung in die Beurteilung von Dachfläche und Geschossdecke ein."
+  },
+  {
+    "name": "Buchholz in der Nordheide", "slug": "buchholz-in-der-nordheide", "region": "Nordheide", "nearby": ["sittensen", "stade", "rotenburg"],
+    "description": "Einblasdämmung in Buchholz in der Nordheide: Voraussetzungen am Haus mit ThermoKern klären. Persönliche Beratung und möglichen Termin anfragen.",
+    "localTitle": "Buchholz: vom Stadtkern bis Holm-Seppensen und Sprötze",
+    "localText": "Zu Buchholz in der Nordheide gehören die Ortschaften Dibbersen, Steinbeck, Trelde, Sprötze, Holm-Seppensen und Reindorf. Die Stadt liegt nahe Hamburg und ist von unterschiedlichen Landschaftsräumen umgeben. Für eine Anfrage ergänzen Sie bitte Ihre Ortschaft, damit sich die Lage des Hauses eindeutig zuordnen lässt.",
+    "localTip": "Bei einem Gebäude am Rand einer Ortschaft sind Hinweise zur Zufahrt hilfreich. Beschreiben Sie außerdem, ob eine Fassade, das Dach oder die Decke gedämmt werden soll. Wegen der Entfernung zu unserem Standort klären wir Umfang, Anfahrt und Termin vor einer Besichtigung gemeinsam.",
+    "source": "https://www.buchholz.de/portal/seiten/stadt-903000746-20101.html", "sourceLabel": "Stadt Buchholz: Stadt und Ortschaften",
+    "localQuestion": "Wie läuft eine Anfrage aus Holm-Seppensen oder Sprötze ab?", "localAnswer": "Übermitteln Sie Ortsteil, Adresse und die gewünschte Maßnahme. Wir besprechen die Ausgangslage und prüfen, wie sich ein Termin und die Anfahrt für Ihr Vorhaben abstimmen lassen."
+  },
+  {
+    "name": "Walsrode", "slug": "walsrode", "region": "Heidekreis", "nearby": ["verden", "rotenburg", "sittensen"],
+    "description": "Einblasdämmung in Walsrode für Ihr Haus anfragen. ThermoKern bespricht geeignete Bauteile, notwendige Vorarbeiten und die Terminplanung.",
+    "localTitle": "Walsrode: Dämmung am Rand der Lüneburger Heide",
+    "localText": "Walsrode grenzt an die Lüneburger Heide. Zum Stadtgebiet gehören auch kleinere Ortschaften wie Schneeheide. Wenn sich Ihr Gebäude außerhalb des Stadtkerns befindet, ergänzen Sie deshalb die Ortschaft und die vollständige Adresse. So können wir die Anfrage und die Anfahrt genauer planen.",
+    "localTip": "Bei einem bislang ungedämmten Dachboden ist wichtig, ob er als Lagerfläche genutzt wird. Beschreiben Sie, welche Bereiche begehbar bleiben müssen und wie die Decke aufgebaut ist. Wir besprechen mögliche Ausführungen und klären die Terminmöglichkeiten für Ihr Vorhaben in Walsrode.",
+    "source": "https://www.stadt-walsrode.de/", "sourceLabel": "Stadt Walsrode: Stadtporträt",
+    "localQuestion": "Kann der Dachboden nach der Dämmung weiter genutzt werden?", "localAnswer": "Die geplante Nutzung muss bei der Ausführung berücksichtigt werden. Begehbarkeit ergibt sich nicht automatisch aus dem Dämmstoff. Teilen Sie uns mit, welche Bereiche als Zugang oder Lagerfläche benötigt werden."
+  }
+]
