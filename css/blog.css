@@ -1,0 +1,66 @@
+/* Shared block layout for the ThermoKern guides. */
+:root { --guide-green: #4a7a20; --guide-border: #dce7d4; --guide-surface: #f3f7ee; }
+.blog-layout { background: #f8faf7; }
+.blog-layout .section { padding-top: 2rem; }
+.blog-layout .blog-page { max-width: 1140px; }
+.blog-layout .blog-list { display: grid; grid-template-columns: minmax(0, 1fr); }
+.blog-layout .blog-card { background: #fff; border-top: 4px solid #6aa832; }
+.blog-layout .blog-meta { flex-wrap: wrap; }
+.blog-layout .blog-meta time, .blog-layout .blog-count { color: #52616b; }
+.blog-layout .blog-read-more { color: var(--guide-green); display: inline-flex; align-items: center; min-height: 44px; }
+.article-blocks { max-width: 860px; overflow-wrap: anywhere; }
+.article-hero { padding: 0 0 1.5rem; }
+.article-hero .btn { margin-top: .5rem; }
+.article-byline, .article-byline time { color: #52616b; }
+.article-answer, .article-toc, .article-block { padding: 1.5rem; border: 1px solid var(--guide-border); border-radius: 16px; margin: 0 0 1.5rem; background: #fff; }
+.article-answer { background: var(--guide-surface); border-left: 5px solid #6aa832; }
+.article-answer > strong, .article-toc > strong { color: #344c25; font-size: 1.1rem; }
+.article-answer p { margin: .5rem 0 0; }
+.article-blocks a:not(.btn), .article-answer a { color: var(--guide-green); text-underline-offset: 3px; }
+.article-blocks .breadcrumb a { color: #52616b; }
+.article-toc ul { list-style: none; margin: .75rem 0 0; }
+.article-toc li { margin: 0; }
+.article-toc a { display: block; padding: .65rem 0; min-height: 44px; }
+.article-blocks h2 { margin-top: 0; }
+.article-step { display: inline-block; color: var(--guide-green); font-weight: 800; margin-bottom: .5rem; }
+.article-block p:last-child { margin-bottom: 0; }
+.article-block, #anfrage { scroll-margin-top: 100px; }
+.article-contact { margin: 0 0 1.5rem; background: #2d3436; border: 0; border-top: 4px solid #e87c1e; }
+.article-contact h2, .article-contact p { color: #fff; }
+.article-blocks .btn-primary, .blog-layout .nav-cta, .contact-direct .btn-primary { background: var(--guide-green); border-color: var(--guide-green); color: #fff; }
+.article-blocks .btn { white-space: normal; min-height: 48px; }
+.article-related { display: grid; gap: .75rem; }
+.article-related a { display: flex; align-items: center; min-height: 48px; padding: .85rem 1rem; background: var(--guide-surface); border-radius: 8px; font-weight: 600; }
+.article-formula { background: var(--guide-surface); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; font-weight: 700; }
+.article-blocks .faq-item summary { gap: 1rem; }
+.article-blocks .faq-item summary::after { flex-shrink: 0; }
+.article-blocks .article-source { font-size: .85rem; color: #52616b; }
+.blog-layout a:focus-visible, .blog-layout summary:focus-visible, .blog-layout button:focus-visible { outline: 3px solid #2e86c1; outline-offset: 4px; }
+.blog-layout .sticky-cta { padding-bottom: env(safe-area-inset-bottom); }
+.blog-layout .sticky-form { background: var(--guide-green); }
+.blog-layout .sticky-wa { background: #176a36; }
+.blog-layout .sticky-call { background: #236a99; }
+.home-guide-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+.home-guide-more { text-align: center; margin-top: 1.5rem; }
+.home-guide-more a { color: var(--guide-green); }
+.contact-direct { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 0 auto 2rem; }
+.contact-direct .btn-outline { color: var(--guide-green); border-color: var(--guide-green); }
+@media (min-width: 760px) {
+  .blog-layout .blog-list, .home-guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .article-block, .article-answer, .article-toc { padding: 2rem; }
+  .article-related { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .fade-left, .fade-right { transform: translateY(24px); }
+  .fade-left.visible, .fade-right.visible { transform: none; }
+  .blog-layout .section { padding-left: 1rem; padding-right: 1rem; }
+  .article-blocks h1 { font-size: clamp(1.65rem, 7vw, 2.1rem); }
+  .article-blocks .btn, .contact-direct .btn { width: 100%; }
+  .article-contact { padding: 1.5rem; }
+  .blog-layout .sticky-btn { padding: .85rem .35rem; font-size: .85rem; }
+  .blog-layout footer { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .fade-up, .fade-left, .fade-right, .scale-in { opacity: 1; transform: none; transition: none; }
+}

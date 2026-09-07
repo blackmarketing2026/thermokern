@@ -16,6 +16,7 @@
     navList.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
         navList.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
         toggle.innerHTML = "&#9776;";
       });
     });
@@ -142,7 +143,9 @@
   // === Smooth Scroll für Sticky CTA ===
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {
-      var target = document.querySelector(this.getAttribute("href"));
+      var fragment = this.getAttribute("href");
+      if (!fragment || fragment === "#") return;
+      var target = document.getElementById(decodeURIComponent(fragment.slice(1)));
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: "smooth", block: "start" });

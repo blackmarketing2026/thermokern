@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.thermo-kern.de/</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -12,67 +12,71 @@
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/hohlschichtdaemmung-kosten</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/einblasdaemmung-einfamilienhaus-kosten</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/zweischaliges-mauerwerk-daemmen</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/einblasdaemmung-ostfriesland</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/dach-nachtraeglich-daemmen</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/dachboden-daemmen-gegen-hitze</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/fassade-daemmen-ohne-wdvs</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/altbau-daemmen-einblasdaemmung</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/feuchte-wand-vor-daemmung-pruefen</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/daemmstoffe-einblasdaemmung-vergleich</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/einblasdaemmung-erfahrungen</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.thermo-kern.de/blog/daemmung-gegen-hitze-und-kaelte</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://www.thermo-kern.de/blog/einblasdaemmung-suedbrookmerland</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.thermo-kern.de/blog/einblasdaemmung-aurich</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.thermo-kern.de/blog/einblasdaemmung-kosten-pro-m3</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.thermo-kern.de/blog/mauerwerk-hohlschicht-ermitteln</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
 </urlset>
