@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const dns = require("dns").promises;
+const dns = require("dns");
 
 let cachedSmtpIp;
 
@@ -7,16 +7,21 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-// Vercel's serverless sandbox occasionally throws "getaddrinfo EBUSY" on cold
-// starts, from a c-ares/libuv race that clears up on its own after a moment.
-// Resolving the IP ourselves avoids Node's dns.lookup fallback path, and
-// retrying a couple of times rides out the transient cold-start race.
+// Warm/reused Lambda containers (which Vercel functions run on) can end up
+// with a permanently corrupted default c-ares DNS channel, causing every
+// lookup on that container to fail with "getaddrinfo EBUSY" for its whole
+// lifetime. A fresh dns.Resolver() opens its own channel, sidestepping the
+// corrupted global one.
 async function resolveSmtpHost(host) {
   if (cachedSmtpIp) return cachedSmtpIp;
 
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      const addresses = await dns.resolve4(host);
+      const resolver = new dns.Resolver();
+      resolver.setServers(["1.1.1.1", "8.8.8.8"]);
+      const addresses = await new Promise((resolve, reject) => {
+        resolver.resolve4(host, (err, addrs) => (err ? reject(err) : resolve(addrs)));
+      });
       cachedSmtpIp = addresses[0];
       return cachedSmtpIp;
     } catch (err) {
