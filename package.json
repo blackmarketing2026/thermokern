@@ -2,7 +2,8 @@
   "name": "thermokern",
   "private": true,
   "scripts": {
-    "build:orte": "node scripts/build-orte.mjs"
+    "build:orte": "node scripts/build-orte.mjs",
+    "test": "node --test"
   },
   "dependencies": {
     "nodemailer": "^9.1.1"
