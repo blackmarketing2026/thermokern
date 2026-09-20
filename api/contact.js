@@ -1,14 +1,37 @@
 const nodemailer = require("nodemailer");
+const dns = require("dns").promises;
 
-const transporter = nodemailer.createTransport({
-  host: process.env.smtp_server,
-  port: Number(process.env.smtp_port) || 465,
-  secure: (Number(process.env.smtp_port) || 465) === 465,
-  auth: {
-    user: process.env.smtp_user,
-    pass: process.env.smtp_passwort,
-  },
-});
+let cachedSmtpIp;
+
+// Vercel's serverless sandbox occasionally throws "getaddrinfo EBUSY" from
+// Node's dns.lookup fallback. Resolving the IP ourselves with a single
+// dns.resolve4() call and connecting directly avoids that fallback path.
+async function getTransporter() {
+  const host = process.env.smtp_server;
+  const port = Number(process.env.smtp_port) || 465;
+
+  if (!cachedSmtpIp) {
+    try {
+      const addresses = await dns.resolve4(host);
+      cachedSmtpIp = addresses[0];
+    } catch (err) {
+      console.error("DNS resolve4 fallback to hostname:", err.message);
+    }
+  }
+
+  return nodemailer.createTransport({
+    host: cachedSmtpIp || host,
+    port,
+    secure: port === 465,
+    auth: {
+      user: process.env.smtp_user,
+      pass: process.env.smtp_passwort,
+    },
+    tls: {
+      servername: host,
+    },
+  });
+}
 
 const RECIPIENTS = (process.env.smtp_empfaenger || "")
   .split(/[,;\s]+/)
@@ -162,6 +185,7 @@ module.exports = async function handler(req, res) {
   const textBody = rows.map(([label, value]) => `${label}: ${value}`).join("\n");
 
   try {
+    const transporter = await getTransporter();
     await transporter.sendMail({
       from: `ThermoKern Website <${process.env.smtp_user}>`,
       to: RECIPIENTS,
