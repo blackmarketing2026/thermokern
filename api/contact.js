@@ -3,24 +3,38 @@ const dns = require("dns").promises;
 
 let cachedSmtpIp;
 
-// Vercel's serverless sandbox occasionally throws "getaddrinfo EBUSY" from
-// Node's dns.lookup fallback. Resolving the IP ourselves with a single
-// dns.resolve4() call and connecting directly avoids that fallback path.
-async function getTransporter() {
-  const host = process.env.smtp_server;
-  const port = Number(process.env.smtp_port) || 465;
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-  if (!cachedSmtpIp) {
+// Vercel's serverless sandbox occasionally throws "getaddrinfo EBUSY" on cold
+// starts, from a c-ares/libuv race that clears up on its own after a moment.
+// Resolving the IP ourselves avoids Node's dns.lookup fallback path, and
+// retrying a couple of times rides out the transient cold-start race.
+async function resolveSmtpHost(host) {
+  if (cachedSmtpIp) return cachedSmtpIp;
+
+  for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       const addresses = await dns.resolve4(host);
       cachedSmtpIp = addresses[0];
+      return cachedSmtpIp;
     } catch (err) {
-      console.error("DNS resolve4 fallback to hostname:", err.message);
+      console.error(`DNS resolve4 attempt ${attempt} failed:`, err.message);
+      if (attempt < 3) await sleep(300 * attempt);
     }
   }
 
+  return host;
+}
+
+async function getTransporter() {
+  const host = process.env.smtp_server;
+  const port = Number(process.env.smtp_port) || 465;
+  const resolvedHost = await resolveSmtpHost(host);
+
   return nodemailer.createTransport({
-    host: cachedSmtpIp || host,
+    host: resolvedHost,
     port,
     secure: port === 465,
     auth: {
@@ -184,20 +198,29 @@ module.exports = async function handler(req, res) {
   if (message) rows.push(["Nachricht", message]);
   const textBody = rows.map(([label, value]) => `${label}: ${value}`).join("\n");
 
-  try {
-    const transporter = await getTransporter();
-    await transporter.sendMail({
-      from: `ThermoKern Website <${process.env.smtp_user}>`,
-      to: RECIPIENTS,
-      subject: `Lead - ThermoKern - ${name}`,
-      html: htmlBody,
-      text: textBody,
-      replyTo: email || undefined,
-    });
+  const mail = {
+    from: `ThermoKern Website <${process.env.smtp_user}>`,
+    to: RECIPIENTS,
+    subject: `Lead - ThermoKern - ${name}`,
+    html: htmlBody,
+    text: textBody,
+    replyTo: email || undefined,
+  };
 
-    return res.status(200).json({ success: true });
-  } catch (err) {
-    console.error("SMTP error:", err);
-    return res.status(500).json({ error: "E-Mail konnte nicht gesendet werden." });
+  let lastErr;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const transporter = await getTransporter();
+      await transporter.sendMail(mail);
+      return res.status(200).json({ success: true });
+    } catch (err) {
+      lastErr = err;
+      console.error(`SMTP send attempt ${attempt} failed:`, err);
+      cachedSmtpIp = undefined;
+      if (attempt < 3) await sleep(300 * attempt);
+    }
   }
+
+  console.error("SMTP error (all retries exhausted):", lastErr);
+  return res.status(500).json({ error: "E-Mail konnte nicht gesendet werden." });
 };
