@@ -5,6 +5,6 @@
     "build:orte": "node scripts/build-orte.mjs"
   },
   "dependencies": {
-    "resend": "^4.0.0"
+    "nodemailer": "^9.1.1"
   }
 }

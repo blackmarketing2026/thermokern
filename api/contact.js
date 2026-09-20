@@ -1,8 +1,19 @@
-const { Resend } = require("resend");
+const nodemailer = require("nodemailer");
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  host: process.env.smtp_server,
+  port: Number(process.env.smtp_port) || 465,
+  secure: (Number(process.env.smtp_port) || 465) === 465,
+  auth: {
+    user: process.env.smtp_user,
+    pass: process.env.smtp_passwort,
+  },
+});
 
-const RECIPIENTS = ["thermokern@function-concept.de", "thermo.kern@web.de"];
+const RECIPIENTS = (process.env.smtp_empfaenger || "")
+  .split(/[,;\s]+/)
+  .map((address) => address.trim())
+  .filter(Boolean);
 const LOGO_URL = process.env.LOGO_URL || "https://thermo-kern.de/img/logo-thermokern.png";
 
 module.exports = async function handler(req, res) {
@@ -151,8 +162,8 @@ module.exports = async function handler(req, res) {
   const textBody = rows.map(([label, value]) => `${label}: ${value}`).join("\n");
 
   try {
-    await resend.emails.send({
-      from: "ThermoKern Website <lead@leadcenter.function-concept.de>",
+    await transporter.sendMail({
+      from: `ThermoKern Website <${process.env.smtp_user}>`,
       to: RECIPIENTS,
       subject: `Lead - ThermoKern - ${name}`,
       html: htmlBody,
@@ -162,7 +173,7 @@ module.exports = async function handler(req, res) {
 
     return res.status(200).json({ success: true });
   } catch (err) {
-    console.error("Resend error:", err);
+    console.error("SMTP error:", err);
     return res.status(500).json({ error: "E-Mail konnte nicht gesendet werden." });
   }
 };
