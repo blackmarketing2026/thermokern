@@ -44,7 +44,7 @@ async function getTransporter() {
     secure: port === 465,
     auth: {
       user: process.env.smtp_user,
-      pass: process.env.smtp_passwort,
+      pass: process.env.smtp_password,
     },
     tls: {
       servername: host,
